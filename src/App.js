@@ -37,8 +37,20 @@ export default function App() {
   }
   
   return (  
-    <div>
-       hello
+    <div className="layout--container" style={darkStyle}>
+      <div className="main--container">
+        <Circle darkStyle={darkMode}/>
+        <Instructions darkStyle={darkMode}/>
+        <div className="toggle--container" onClick={toggle}>
+          <div className="slider--container" style={darkStyleSliderContainer}>
+            <div className="slider" style={darkStyleSlider}></div>
+          </div>
+          <span style={darkStyleTextLight}>Light</span>
+          <span style={darkStyleTextDark}>Dark</span>
+        </div>
+        <Decoration darkStyle={darkMode} />
+      </div>
+      <Footer darkStyle={darkMode} />
     </div>
   );
 }
