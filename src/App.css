@@ -46,8 +46,9 @@ html {
 
   span {
     font-size: 12px;
-  }
-
+    text-decoration: underline
+  };
+  
   .toggle--container {
     display: none;
   }
@@ -69,7 +70,6 @@ html {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    z-index: 1;
     height: 35px;
     width: 184px;
     border-radius: 20px;
@@ -104,7 +104,7 @@ html {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 20px 20px 10px 20px;
+    padding: 25px 20px 10px 25px;
     width: 100%;
   }
 
@@ -116,8 +116,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 35px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     border: none;
     transition: 0.35s;
@@ -139,6 +139,7 @@ html {
     display: block;
     font-size: 18px;
     font-weight: 500;
+    width: 300px;
   }
 }
   @media only screen and (min-height: 263px) {
@@ -148,7 +149,7 @@ html {
     display: flex;
     justify-content: center;
     position: relative;
-    margin: 16px 0px 28px 0px;
+    margin: 28px 0px 28px 0px;
   }
 
   .circle--light {
@@ -169,6 +170,7 @@ html {
 
   .heading {
     margin-bottom: 28px;
+    margin-top: 16px;
   }
 }
 
